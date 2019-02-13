@@ -1,7 +1,7 @@
 const weird = require('../simple-puzzles/weird-string-case');
 const expect = require('chai').expect;
 
-describe('When the solution is tried for test cases', function(){
+describe('When the solutions are tried for the weird challenge', function(){
     it('solution one passes', function(){
         expect(weird.toWeirdCaseOne('Hello there!')).to.equal('HeLlO ThErE!');
         expect(weird.toWeirdCaseOne('')).to.equal('');
