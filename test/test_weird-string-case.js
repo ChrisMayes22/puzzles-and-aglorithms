@@ -14,5 +14,11 @@ describe('When the solutions are tried for the weird challenge', function(){
         expect(weird.toWeirdCaseTwo('   ')).to.equal('   ');
         expect(weird.toWeirdCaseTwo('Dog (cat)|%s%(.*%)||plain=false')).to.equal('DoG (cAt)|%s%(.*%)||PlAiN=FaLsE');
     })
+    it('solution three passes', function(){
+        expect(weird.toWeirdCaseThree('Hello there!')).to.equal('HeLlO ThErE!');
+        expect(weird.toWeirdCaseThree('')).to.equal('');
+        expect(weird.toWeirdCaseThree('   ')).to.equal('   ');
+        expect(weird.toWeirdCaseThree('Dog (cat)|%s%(.*%)||plain=false')).to.equal('DoG (cAt)|%s%(.*%)||PlAiN=FaLsE');
+    })
 })
 

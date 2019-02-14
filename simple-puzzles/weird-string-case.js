@@ -25,7 +25,14 @@ function toWeirdCaseTwo(string){
     return strCopy;
 };
 
+// ## THIRD ATTEMPT - SIMPLIFIED ##
+
+function toWeirdCaseThree(string){
+    return string.split('').map((item, i) => i%2 ? item.toLowerCase() : item.toUpperCase()).join('');
+}
+
 module.exports = {
     toWeirdCaseOne,
-    toWeirdCaseTwo
+    toWeirdCaseTwo,
+    toWeirdCaseThree
 }
