@@ -1,4 +1,4 @@
-const vowel = require('../simple-puzzles/vowel-count');
+const vowel = require('../codewars/vowel-count');
 const expect = require('chai').expect;
 
 

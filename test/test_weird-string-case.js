@@ -1,4 +1,4 @@
-const weird = require('../simple-puzzles/weird-string-case');
+const weird = require('../reddit/weird-string-case');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the weird challenge', function(){
