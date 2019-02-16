@@ -3,7 +3,15 @@
 // Note: The function accepts an integer and returns an integer
 
 
-//First Attempt -- Verbose
+// ### SECOND ATTEMPT - SIMPLIFIED - BEST VERSION SO FAR ### 
+function squareDigitsTwo(num){
+    return parseInt((num+'')
+                        .split('')
+                        .map(item => Math.pow(item,2))
+                        .join(''));
+}
+
+// ### FIRST ATTEMPT - VERBOSE ###
 function squareDigitsOne(num){
     const string = num + '';
     let arr = [];
@@ -13,10 +21,7 @@ function squareDigitsOne(num){
     return parseInt(arr.join(''));
 }
 
-//Second Attempt -- Simplified
-function squareDigitsTwo(num){
-    return parseInt((num+'').split('').map(item => Math.pow(item,2)).join(''));
-}
+
 
 module.exports = {
     squareDigitsOne,

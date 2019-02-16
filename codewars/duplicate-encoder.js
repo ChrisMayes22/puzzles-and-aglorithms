@@ -9,7 +9,7 @@
 // "Success" => ")())())"
 // "(( @" => "))(("
 
-// ### FIRST ATTEMPT
+// ### FIRST ATTEMPT ###
 function duplicateEncode(word){
     return word
             .toLowerCase()

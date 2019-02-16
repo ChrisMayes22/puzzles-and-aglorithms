@@ -11,7 +11,15 @@
 // Note: n and p will always be given as strictly positive integers.
 
 
-// Solution One - Verbose 
+// ### SOLUTION TWO - BEST SOLUTION SO FAR ###
+function digPowTwo(n, p){
+    let product = Array.prototype
+                    .map.call(n+'', (item, i) => Math.pow(item, p+i))
+                    .reduce((acc, curr) => acc+curr);
+    return product % n === 0 ? product/n : -1; 
+}
+
+// ### SOLUTION ONE - VERBOSE ### 
 function digPowOne(n, p){
     function exponent(base, power, product = base){ // NOTE TO SELF IN FUTURE: Math object comes with .pow method!!
         if(power === 0){
@@ -28,11 +36,7 @@ function digPowOne(n, p){
     return product % n === 0 ? product/n : -1; 
 }
 
-//Solution Two - Simplified
-function digPowTwo(n, p){
-    let product = (n+'').split('').map((item, i) => Math.pow(item, p+i)).reduce((acc, curr) => acc+curr);
-    return product % n === 0 ? product/n : -1; 
-}
+
 
 module.exports = {
     digPowOne,

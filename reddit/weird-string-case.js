@@ -7,6 +7,13 @@
 // will only be present if there are multiple words. Words will be separated by a single space(' ').
 
 
+// ## THIRD ATTEMPT - SIMPLIFIED - BEST SO FAR ##
+function toWeirdCaseThree(string){
+    return Array.prototype
+            .map.call(string, (item, i) => i%2 ? item.toLowerCase() : item.toUpperCase())
+            .join('');
+}
+
 // ## FIRST ATTEMPT - SPLIT AND JOIN ##
 function toWeirdCaseOne(string){
     const stringArray = string.split('');
@@ -25,11 +32,7 @@ function toWeirdCaseTwo(string){
     return strCopy;
 };
 
-// ## THIRD ATTEMPT - SIMPLIFIED ##
 
-function toWeirdCaseThree(string){
-    return string.split('').map((item, i) => i%2 ? item.toLowerCase() : item.toUpperCase()).join('');
-}
 
 module.exports = {
     toWeirdCaseOne,

@@ -2,10 +2,10 @@
 // String will never be empty and you do not need to account for different data types
 // or for non-character characters.
 
-//## FINAL ATTEMPT - USE SPLIT APPROPRIATELY 
+//### THIRD ATTEMPT - USE SPLIT APPROPRIATELY - BEST VERSION SO FAR ###
 
 function findShort(s) {
-    return Math.min.apply(null, s.split(' ').map(word => word.length));  //Today I learned a bit about how the .split method works.
+    return Math.min.apply(null, s.split(' ').map(word => word.length));  
 }
 
 // ### FIRST ATTEMPT - VERBOSE ###

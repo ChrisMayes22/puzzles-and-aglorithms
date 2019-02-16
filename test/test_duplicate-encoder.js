@@ -9,8 +9,3 @@ describe('When the solutions are tried for the duplicate challenge', function(){
         expect(duplicate.duplicateEncode('(( @')).to.equal('))((');
     })
 })
-
-// "din" => "((("
-// "recede" => "()()()"
-// "Success" => ")())())"
-// "(( @" => "))(("
