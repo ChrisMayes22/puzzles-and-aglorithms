@@ -12,6 +12,7 @@
 // T < -- > A
 // C < -- > G
 
+
 function DNAStrand(dna){
     const parsingObject = {
         T: 'A',
