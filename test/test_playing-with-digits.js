@@ -1,4 +1,4 @@
-const digits = require('../codewars/playing-with-digits');
+const digits = require('../codewars/level-six/playing-with-digits');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the digits challenge', function(){

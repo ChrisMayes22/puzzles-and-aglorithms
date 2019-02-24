@@ -1,4 +1,4 @@
-const which = require('../codewars/which-are-in');
+const which = require('../codewars/level-six/which-are-in');
 const chai = require('chai');
 const expect = require('chai').expect;
 chai.use(require('chai-shallow-deep-equal'));

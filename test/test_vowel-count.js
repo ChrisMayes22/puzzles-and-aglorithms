@@ -1,4 +1,4 @@
-const vowel = require('../codewars/vowel-count');
+const vowel = require('../codewars/level-seven(easy)/vowel-count');
 const expect = require('chai').expect;
 
 

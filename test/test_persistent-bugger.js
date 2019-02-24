@@ -1,4 +1,4 @@
-const persistent = require('../codewars/persistent-bugger');
+const persistent = require('../codewars/level-six/persistent-bugger');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the persistent challenge', function(){

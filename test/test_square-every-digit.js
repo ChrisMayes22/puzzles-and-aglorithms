@@ -1,4 +1,4 @@
-const square = require('../codewars/square-every-digit');
+const square = require('../codewars/level-seven(easy)/square-every-digit');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the vowel challenge', function(){

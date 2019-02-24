@@ -1,4 +1,4 @@
-const duplicate = require('../codewars/duplicate-encoder');
+const duplicate = require('../codewars/level-six/duplicate-encoder');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the duplicate challenge', function(){

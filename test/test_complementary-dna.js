@@ -1,4 +1,4 @@
-const dna = require('../codewars/complementary-dna');
+const dna = require('../codewars/level-seven(easy)/complementary-dna');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the dna challenge', function(){

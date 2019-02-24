@@ -1,4 +1,4 @@
-const consecutive = require('../codewars/consecutive-strings');
+const consecutive = require('../codewars/level-six/consecutive-strings');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the consecutive challenge', function(){

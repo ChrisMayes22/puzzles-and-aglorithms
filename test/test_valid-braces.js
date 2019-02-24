@@ -1,4 +1,4 @@
-const braces = require('../codewars/valid-braces');
+const braces = require('../codewars/level-six/valid-braces');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the braces challenge', function(){

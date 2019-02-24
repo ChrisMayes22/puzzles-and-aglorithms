@@ -1,4 +1,4 @@
-const sudoku = require('../codewars/sudoku');
+const sudoku = require('../codewars/level-five/sudoku');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the sudoku challenge', function(){

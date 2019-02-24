@@ -1,4 +1,4 @@
-const tribo = require('../codewars/tribonacci');
+const tribo = require('../codewars/level-six/tribonacci');
 const chai = require('chai');
 const expect = require('chai').expect;
 chai.use(require('chai-shallow-deep-equal'));

@@ -17,7 +17,13 @@
 
     //NOTE FOR WHEN YOU TRY THIS AGAIN: REMEMBER ARRAY.SLICE!!  
 
+    //Also, consider checking inside the recursion
+    //And use dictionary checking
+
 function doneOrNot(board){
+    if(board.length !== 9){
+        return "Are you playing Sudoku? Input size is not 9x9."
+    }
     function isValidRow(row){
         const finishedRow = [1,2,3,4,5,6,7,8,9];
         return (row.sort().filter((num, i) => num === finishedRow[i]).length === 9);

@@ -1,4 +1,4 @@
-const shortestWord = require('../codewars/shortest-word');
+const shortestWord = require('../codewars/level-seven(easy)/shortest-word');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the shortestWord challenge', function(){

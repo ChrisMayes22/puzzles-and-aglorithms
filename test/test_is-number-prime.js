@@ -1,4 +1,4 @@
-const prime = require('../codewars/is-number-prime');
+const prime = require('../codewars/level-six/is-number-prime');
 const expect = require('chai').expect;
 
 describe('When the solutions are tried for the prime challenge', function(){
