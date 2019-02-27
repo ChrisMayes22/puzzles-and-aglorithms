@@ -16,15 +16,15 @@ const sum_pairs = function(ints, s){ //Challenge author uses snake_case for var 
 
     while(i < ints.length){
         let target = s - ints[i];
-        if(dict[target]){
+        if(dict[target]){ // Checks if previously encountered number is a solution
             solution.push(target, ints[i])
             break;
         };
-        if(dict[ints[i]]){
+        if(dict[ints[i]]){ //Checks if current index is duplicate #.
             i++
             continue;
         }
-        dict[ints[i]] = true;
+        dict[ints[i]] = true; //Stores new numbers in dictionary
         i++
     }
     return solution.length >= 2 ? solution : undefined;
