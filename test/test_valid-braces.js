@@ -8,4 +8,10 @@ describe('When the solutions are tried for the braces challenge', function(){
         expect(braces.validBraces('([{')).to.be.false;
         expect(braces.validBraces('([)]')).to.be.false;
     })
+    it('solution two passes', function(){
+        expect(braces.validBracesTwo('()[]{}')).to.be.true;
+        expect(braces.validBracesTwo('([{}])')).to.be.true;
+        expect(braces.validBracesTwo('([{')).to.be.false;
+        expect(braces.validBracesTwo('([)]')).to.be.false;
+    })
 })

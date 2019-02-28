@@ -25,6 +25,14 @@
 //What if we have a reduce method that eliminates complete bracket/parenthesis statements,
 //And returns false if it tries to eliminate an expression with something inside of it? 
 
+//### SECOND ATTEMPT - Regex Recursive strategy - Best so far ###
+
+function validBracesTwo(braces){
+    const newBraces = braces.replace(/\(\)|\[\]|\{\}/, '');
+    if(newBraces === '') return true;
+    if(newBraces.length === braces.length) return false;
+    return validBracesTwo(newBraces);
+}
 
 //### FIRST ATTEMPT ###
 function validBraces(braces){
@@ -42,5 +50,6 @@ function validBraces(braces){
 }
 
 module.exports = {
-    validBraces
+    validBraces,
+    validBracesTwo
 }

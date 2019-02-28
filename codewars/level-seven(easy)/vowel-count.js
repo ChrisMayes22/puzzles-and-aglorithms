@@ -2,6 +2,11 @@
 // We will consider a, e, i, o, and u as vowels for this Kata.
 // The input string will only consist of lower case letters and/or spaces.
 
+// ## SECOND ATTEMPT - Regex strategy - Best so far ##
+function vowelCountRegex(string){
+    return string.match(/[aeiou]/ig) ? string.match(/[aeiou]/ig).length : 0; 
+}
+
 // ## FIRST ATTEMPT ##
 function vowelCount(string){
     let count = 0;
@@ -14,5 +19,6 @@ function vowelCount(string){
 }
 
 module.exports = {
-    vowelCount
+    vowelCount,
+    vowelCountRegex
 };

@@ -9,6 +9,20 @@
 // You can assume you will be given an integer input.
 // You can not assume that the integer will be only positive. You may be given negative numbers as well (or 0).
 
+
+//Second Attempt - Should work for any prime number - Best solution so far
+function isPrimeTwo(num){
+    if(num <= 3) return num > 1;
+    if (!(num%3)) return false;
+    if(!(num%2)) return false;
+    for(let i = 5; i <= Math.sqrt(num); i += 2){
+        if(!(num%i)) return false;
+    }
+    return true;
+}
+
+
+//First Attempt - Only works up to 120 - Will fail on 121
 function isPrime(num) {
     if(num < 2){
         return false;
@@ -24,5 +38,6 @@ function isPrime(num) {
 }
 
 module.exports = {
-    isPrime
+    isPrime,
+    isPrimeTwo
 }

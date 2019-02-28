@@ -9,4 +9,10 @@ describe('When the solutions are tried for the vowel challenge', function(){
         expect(vowel.vowelCount('   ')).to.equal(0);
         expect(vowel.vowelCount('Dog (cat)|%s%(.*%)||plain=false')).to.equal(6);
     })
+    it('solution two passes', function(){
+        expect(vowel.vowelCountRegex('Hello there!')).to.equal(4);
+        expect(vowel.vowelCountRegex('')).to.equal(0);
+        expect(vowel.vowelCountRegex('   ')).to.equal(0);
+        expect(vowel.vowelCountRegex('Dog (cat)|%s%(.*%)||plain=false')).to.equal(6);
+    })
 })
