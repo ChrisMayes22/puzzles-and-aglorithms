@@ -13,8 +13,7 @@
 //Second Attempt - Should work for any prime number - Best solution so far
 function isPrimeTwo(num){
     if(num <= 3) return num > 1;
-    if (!(num%3)) return false;
-    if(!(num%2)) return false;
+    if (!(num%3) || num === 4) return false;
     for(let i = 5; i <= Math.sqrt(num); i += 2){
         if(!(num%i)) return false;
     }
