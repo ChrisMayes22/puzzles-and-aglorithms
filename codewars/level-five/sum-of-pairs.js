@@ -9,6 +9,20 @@
         
     */
 
+
+//Second Attempt - Similar strategy to first, but pared down - Best so far
+const sum_pairs = function(ints, s){
+    const dict = {};
+    for(let i=0; i < ints.length; i++){
+        let target = s - ints[i];
+        if(dict[target]) return [target, ints[i]]; // Checks if previously encountered number is a solution        
+        if(dict[ints[i]]) continue; //Checks if current index is duplicate #.
+        dict[ints[i]] = true; //Stores new numbers in dictionary
+    }
+    return undefined;
+}
+
+// First Attempt
 const sum_pairs = function(ints, s){ //Challenge author uses snake_case for var declarations; I follow his style.
     const solution = [];
     const dict = {};
