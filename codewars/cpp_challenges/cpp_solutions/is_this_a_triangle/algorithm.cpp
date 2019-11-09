@@ -29,3 +29,16 @@ int main() {
 	std::cin.get();
 	return isTriangle(1, 2, 3);
 }
+
+/*
+	NB: Great solution by another user:
+
+namespace Triangle
+{
+  bool isTriangle(int a, int b, int c)
+  {
+	return a-b<c && b-c<a && c-a<b;
+  }
+};
+
+*/
