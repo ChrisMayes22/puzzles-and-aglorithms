@@ -9,6 +9,6 @@ def anagrams(word, words):  ## First attempt
 print(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']))
 
 def anagrams_2(word, words): ## Second Attempt
-    return([item for item in words if sorted(item) is sorted(word)])
+    return([item for item in words if sorted(item) == sorted(word)])
 
 print(anagrams_2('abba', ['aabb', 'abcd', 'bbaa', 'dada']))
