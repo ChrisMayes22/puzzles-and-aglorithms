@@ -5,4 +5,4 @@ def find_uniq(arr):
     while i < len(arr):
         if arr[i] is not arr[0]:
             return arr[i]
-        i+=1
+        i += 1

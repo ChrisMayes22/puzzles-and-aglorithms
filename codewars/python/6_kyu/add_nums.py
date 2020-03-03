@@ -1,5 +1,5 @@
-def get_sum(a,b):
-    if(a == b):
+def get_sum(a, b):
+    if a == b:
         return a
     big = a if a > b else b
     small = b if b < a else a
@@ -9,4 +9,7 @@ def get_sum(a,b):
         i -=1
     return big
 
-get_sum(2,0)
+
+print(get_sum(2, 0))
+
+
