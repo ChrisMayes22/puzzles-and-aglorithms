@@ -21,7 +21,7 @@
 
 // 1 <= n <= 45
 
-/* FIRST ATTEMPT */
+/* FIRST ATTEMPT (recursive top-down) */
 
 const memo_dict = {};
 /**
@@ -42,4 +42,22 @@ let climbStairs = function(n) {
     const result = climbStairs(n - 1) + climbStairs(n - 2);
     memo_dict[n] = result;
     return result;
+};
+
+/* SECOND ATTEMPT (iterative bottom-up) */
+
+const memo_dict = {};
+/**
+ * @param {number} n
+ * @return {number}
+ */
+let climbStairs = function(n) {
+
+    const solutions = [1, 2];
+
+    for(let i = 2; i < n; i++){
+        solutions[i] = solutions[i-1] + solutions[i-2];
+    }
+
+    return solutions[n-1];
 };
