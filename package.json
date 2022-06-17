@@ -13,7 +13,7 @@
     "chai": "^4.3.4",
     "chai-shallow-deep-equal": "^1.4.6",
     "glob-parent": "^6.0.2",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.10"
   },
