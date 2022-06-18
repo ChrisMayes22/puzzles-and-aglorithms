@@ -14,3 +14,18 @@
         nums[i] = preComputed[i];
     }
 };
+
+const rotateReverse = function(nums, k){
+    k = k % nums.length;
+    reverseSubArr(nums, 0, nums.length-1);
+    reverseSubArr(nums, 0, k-1);
+    reverseSubArr(nums, k, nums.length-1);
+}
+
+const reverseSubArr = function(arr, i, j){
+    while(j > i){
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+        i += 1;
+        j -= 1;
+    }
+}
